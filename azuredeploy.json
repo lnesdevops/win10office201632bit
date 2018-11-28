@@ -22,7 +22,7 @@
         "virtualMachineSize": "Standard_D2s_v3",
         "virtualNetworkName": "adVNET",
         "subnetName": "adSubnet",
-        "networkInterfaceName":"ASTestVMNic",
+        "networkInterfaceName":"[concat(parameters('virtualMachineName'),'-NIC')]",
         "publisher": "MicrosoftWindowsDesktop",
         "offer": "Windows-10",
         "sku": "rs4-pro",
@@ -116,36 +116,9 @@
               
               }
           }
-        ],
-
-        "resources": [
-            {
-                "name": "InstallStandardApps",
-                "type": "extensions",
-                "location": "[variables('location')]",
-                "apiVersion": "2017-12-01",
-                "dependsOn": [
-                    "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachineName'))]"
-                ],
-                "tags": {
-                    "displayName": "Install Standard Applications"
-                },
-                "properties": {
-                    "publisher": "Microsoft.Compute",
-                    "type": "CustomScriptExtension",
-                    "typeHandlerVersion": "1.4",
-                    "autoUpgradeMinorVersion": true,
-                    "settings": {
-                        "fileUris": [
-                            "[variables('StandardAppsURL')]"
-                        ],
-                        "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -File ', variables('StandardAppsScriptFolder'), '/', variables('StandardAppsScriptFileName'))]"
-                    }
-                }
-            }
         ]
 
-        },
+    },
          
                    
 {
@@ -218,7 +191,7 @@
          
       
         
-    },
+    }
 
 
     
