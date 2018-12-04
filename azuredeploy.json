@@ -13,8 +13,8 @@
      
       
     "variables": {
-      "vnetId": "[resourceId('vfEnv1_rg','Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
-        "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
+        "vnetID": "[resourceId('Microsoft.Network/virtualNetworks','adVNET')]", 
+        "subnetRef": "[concat(variables('vnetID'),'/subnets/adSubnet')]",        
         "diagnosticsExtensionName": "IaaSDiagnostics",
         "StandardAppsScriptFolder": ".",
         "StandardAppsURL": "https://github.com/lnesdevops/win10office201632bit/blob/master/standardtools.ps1",
