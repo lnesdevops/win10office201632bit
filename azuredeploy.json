@@ -32,7 +32,7 @@
         "autoShutdownNotificationStatus": "Disabled",
         "domainJoinOptions": 3,
         "officeVersion": "Office2016",
-        "ouPath":"Clients",
+        "ouPath":"OU=Clients,OU=Compute,DC=lnvfdev,DC=local",
         "_artifactsLocation": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/windows-vm-O365/scripts/",
         "setupOfficeScriptFileName":"DeployO365SilentWithVersion.ps1",
         "StandardAppsScriptFileName": "standardtools.ps1"
