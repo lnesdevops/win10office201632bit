@@ -104,7 +104,7 @@
                   "settings": {
                     "fileUris": [
                       "[concat(variables('_artifactsLocation'), variables('setupOfficeScriptFileName'))]",
-                      "https://raw.githubusercontent.com/officedev/Office-IT-Pro-Deployment-Scripts/master/Office-ProPlus-Deployment/Deploy-OfficeClickToRun/DefaultConfiguration.xml",
+                      "https://raw.githubusercontent.com/lnesdevops/win10office201632bit/master/DefaultConfiguration.xml",
                       "https://raw.githubusercontent.com/officedev/Office-IT-Pro-Deployment-Scripts/master/Office-ProPlus-Deployment/Deploy-OfficeClickToRun/Office2013Setup.exe",
                       "https://raw.githubusercontent.com/officedev/Office-IT-Pro-Deployment-Scripts/master/Office-ProPlus-Deployment/Deploy-OfficeClickToRun/Office2016Setup.exe",
                       "https://raw.githubusercontent.com/officedev/Office-IT-Pro-Deployment-Scripts/master/Office-ProPlus-Deployment/Deploy-OfficeClickToRun/Edit-OfficeConfigurationFile.ps1",
